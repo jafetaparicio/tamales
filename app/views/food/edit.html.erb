@@ -1,0 +1,9 @@
+<h1>Edit Food</h1>
+
+<% @food.errors.messages.each do |name, message| %>
+  <p class="bg-danger"><%= name %> <%= message.first %></p>
+<% end %>
+
+<%= form_tag "/food/#{@food.id}", method: :put do %>
+  <%= render 'form' %>
+<% end %>

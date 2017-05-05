@@ -1,0 +1,13 @@
+<div class="form-group">
+        <%= text_field_tag :name, @food.name, placeholder: 'Name', class: 'form-control' %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :description, @food.description, placeholder: 'Description', class: 'form-control' %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :picture_url, @food.picture_url, placeholder: 'Pricture URL', class: 'form-control' %>
+    </div>
+    <div class="form-group">
+        <%= text_field_tag :price, @food.price, placeholder: 'Price', class: 'form-control' %>
+    </div>
+    <%= submit_tag 'Save', class: 'btn btn-default' %>
